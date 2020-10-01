@@ -20,7 +20,7 @@ function unDefined(primary, secondary) {
     } else if (primary !== undefined && secondary !== undefined) {
         const returnedValue1 = colorCombinator(primary, secondary);
         if (returnedValue1 === undefined) {
-            console.log('You have inputted an invalid color');
+            console.log('One or more of your inputs are invalid');
         } else {
             console.log(primary + ' and ' + secondary + ' combined is ' + returnedValue1);
         }
