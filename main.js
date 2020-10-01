@@ -9,14 +9,13 @@ unDefined(process.argv[2], process.argv[3]);
 
 function unDefined(primary, secondary) {
     if (primary === undefined && secondary === undefined) {
-        console.log('Minimum one color required, please try again');
-
+        console.log('Minimum one valid color required, please try again');
     } else if (primary !== undefined && secondary === undefined) {
         const returnedValue1 = colorDeconstructor(primary);
             if (returnedValue1 === undefined) {
                 console.log('Your input is not a valid color');
             } else {
-                console.log('Your color ' + returnedValue1);
+                console.log('Your color is made up of ' + returnedValue1);
             }
     } else if (primary !== undefined && secondary !== undefined) {
         const returnedValue1 = colorCombinator(primary, secondary);
