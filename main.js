@@ -12,11 +12,11 @@ function unDefined(primary, secondary) {
         console.log('Minimum one valid color required, please try again');
     } else if (primary !== undefined && secondary === undefined) {
         const returnedValue1 = colorDeconstructor(primary);
-            if (returnedValue1 === undefined) {
-                console.log('Your input is not a valid color');
-            } else {
-                console.log('Your color is made up of ' + returnedValue1);
-            }
+        if (returnedValue1 === undefined) {
+            console.log('Your input is not a valid color');
+        } else {
+            console.log('Your color is made up of ' + returnedValue1);
+        }
     } else if (primary !== undefined && secondary !== undefined) {
         const returnedValue1 = colorCombinator(primary, secondary);
         if (returnedValue1 === undefined) {
