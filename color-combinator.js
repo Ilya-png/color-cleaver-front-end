@@ -11,9 +11,6 @@ function colorCombinator(color1, color2) {
   } else if (color1 === 'yellow' && color2 === 'blue' || color1 === 'blue' && color2 === 'yellow') {
     return 'green';
   }
- 
- 
- 
 }
 
 // Our setup code here. Don't touch!

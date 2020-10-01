@@ -11,11 +11,11 @@ unDefined(color1, color2);
 
 function unDefined(primary, secondary) {
     if (primary === undefined && secondary === undefined) {
-        console.log('1Minimum one color required, please try again');
-    } else if (primary !== undefined || secondary === undefined) {
-        console.log('2You color ' + colorDeconstructor(primary));
-    } else if (primary !== undefined || secondary !== undefined) {
-        console.log('3You color ' + colorCombinator(primary, secondary));
+        console.log('Minimum one color required, please try again');
+    } else if (primary !== undefined && secondary === undefined) {
+        console.log('You color ' + colorDeconstructor(primary));
+    } else if (primary !== undefined && secondary !== undefined) {
+        console.log('You color ' + colorCombinator(primary, secondary));
     } else {
         console.log('NOTHING IS WORKING');
     }
